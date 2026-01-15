@@ -1,2 +1,2 @@
-# CPS-276-test
+# CPS 276
 first git repo
