@@ -12,8 +12,8 @@ foreach($numbers as $even){
     }
 }
 
-// Removes the " - " dash at te end ... then beginning from 0 and stopping -3(characters before the end)
-$evenNumbers = substr($evenNumbers, 0, -3);
+// Removes the " - " at the end by using rtrim you remove the last dash that would be at then end "r" removes character from the right " -"
+$evenNumbers = rtrim($evenNumbers, " - ");
 
 // $form variable using HeroDoc Syntax <<<EOD to store a large block of HTML ...class = "form-control" 
 $form = <<<EOD
