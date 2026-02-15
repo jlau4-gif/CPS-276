@@ -32,7 +32,7 @@ EOD;
 
 
 function createTable($rows, $cols){
-    $table = '<table class="table table-bordered table-striped">';
+    $table = '<table class="table table-bordered">';
     
     // Fixed: changed $$rows to $rows
     for($row = 1; $row <= $rows; $row++){
