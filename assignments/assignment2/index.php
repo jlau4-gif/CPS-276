@@ -16,6 +16,7 @@ foreach($numbers as $even){
 $evenNumbers = rtrim($evenNumbers, " - ");
 
 // $form variable using HeroDoc Syntax <<<EOD to store a large block of HTML ...class = "form-control" 
+//mb and mt used to creat margin bottom and margin top
 $form = <<<EOD
 <form class="mb-3 mt-3">
 <div class="mb-3 mt-3">
