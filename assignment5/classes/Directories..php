@@ -11,7 +11,7 @@ class Directories {
             return "A directory already exists with that name.";
         }
 
-        // Use the permissions required by the rubric
+        // creates path for directories and if correct permission set in ssh it moves on
         if (!mkdir($targetPath, 0777, true)) {
             return "Error: Could not create the directory.";
         }
