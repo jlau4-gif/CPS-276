@@ -16,7 +16,7 @@ class Date_time {
 
     private function addNote() {
         if (empty($_POST['dateTime']) || empty($_POST['note'])) {
-            return "<div class='text-danger mb-3'>You must enter a date, time, and note.</div>";
+            return "<div class='mb-3'>You must enter a date, time, and note.</div>";
         }
 
         // Convert HTML datetime-local to timestamp
@@ -34,10 +34,10 @@ class Date_time {
             $stmt->bindParam(':note', $noteText, PDO::PARAM_STR);
             $stmt->execute();
 
-            return "<div class='text-success mb-3'>The note has been added.</div>";
+            return "<div class='mb-3'>The note has been added.</div>";
             
         } catch (PDOException $e) {
-            return "<div class='text-danger mb-3'>There was an error adding the note.</div>";
+            return "<div class='mb-3'>There was an error adding the note.</div>";
         }
     }
 
