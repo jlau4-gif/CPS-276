@@ -1,5 +1,4 @@
 <?php
-// views/addContactForm.php
 ?>
 <h2 class="mb-4">Add Contact</h2>
 
