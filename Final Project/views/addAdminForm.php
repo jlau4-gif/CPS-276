@@ -1,5 +1,4 @@
 <?php
-// views/addAdminForm.php
 ?>
 <?php if (!empty($msg)): ?>
     <p class="text-dark mb-3"><?php echo htmlspecialchars($msg); ?></p>
